@@ -1,0 +1,16 @@
+# Rashed Al-Awamleh
+
+Computer Science graduate and full-stack web and mobile developer based in Amman, Jordan.
+
+- Email: alawamlehrashed04@gmail.com
+- Phone: +962 79 710 7594
+- GitHub: https://github.com/rashedraed04
+- LinkedIn: https://www.linkedin.com/in/rashed-al-awamleh-5b2893292
+
+## Featured projects
+
+- AI Sales Agent for Facebook Messenger: https://github.com/rashedraed04/messenger-agent
+- SmartPass — Student Platform: https://github.com/rashedraed04/SmartPass
+- Easy Set — Offline-First Gym Tracker: https://github.com/rashedraed04/EasySet
+
+Skills include Flutter, Dart, Python, FastAPI, Firebase, Supabase, PostgreSQL, Gemini API integration, automated testing, and workflow automation. See the portfolio homepage for project descriptions and additional technical skills.

@@ -1,0 +1,34 @@
+"use client";
+
+import { useParams } from "next/navigation";
+import Navbar from "@/components/Navbar";
+import Hero from "../(components)/Hero";
+import About from "../(components)/Info";
+import Mockup from "../(components)/Mockup";
+import FlowMap from "../(components)/FlowMap";
+import CaseStudyCTA from "../(components)/CaseStudyCTA";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import { caseStudies } from "@/data/case-study";
+
+export default function CaseStudyPage() {
+    const { slug } = useParams();
+    const caseStudy = caseStudies[slug];
+
+    if (!caseStudy) return null;
+
+    return (
+        <main className="w-screen overflow-x-hidden">
+            <Navbar />
+            <Hero caseStudy={caseStudy.hero} device={caseStudy.device} />
+            <section id="mockup" className="bg-[var(--primary)] py-20!">
+                <About caseStudy={caseStudy.about} />
+                <Mockup device={caseStudy.device} screenshots={caseStudy.screenshots} />
+                <FlowMap note={caseStudy.workflowNote} nodes={caseStudy.nodes} connections={caseStudy.connections} />
+            </section>
+            <CaseStudyCTA />
+            <Contact />
+            <Footer />
+        </main>
+    );
+}
